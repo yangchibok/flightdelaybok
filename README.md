@@ -32,7 +32,7 @@ Project : Flight delay prediction
 
 >데이터는 약 5만개를 사용하였으며, 김포공항에서 제주공항으로 출발하는 모든 항공기에 대한 데이터를 크롤링을 통해 모았습니다. 대부분 feature들이 대부분 categorical하기 때문에 one hot encoding을 통해서 더미변수로 만들어줍니다.
 
->###3) 데이터 분석 결과
+>##3. 데이터 분석 결과
 > 분석 결과를 판단 할수 있는 것은 recall값으로 정했습니다. recall이란 실제값이 예측값으로 나온 비율로 실제 지연이라고 된 비행기가 알고리즘을 통해 예측한 값도 지연이란 값으로 얼마나 나왔는지를 나타내는 값입니다.
 
 > 적용한 알고리즘은 총 4가지로 logistic regression, random forest, SVM(Support vector machine), Navie bayes(Gaussian, Multinomial)입니다. 4가지 모형을 다 적용해본 결과 가장 좋은결과는 75%로 나타났습니다. 하지만 fall-out 값이 높게 너무 높게 나타나서 모델의 개선 필요성을 느꼈습니다.
